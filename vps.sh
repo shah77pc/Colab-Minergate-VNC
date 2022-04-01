@@ -4,7 +4,7 @@ RED='\033[0;31m'
 GREEN='\33[0;32m'
 NC='\033[0m'
 printf "${RED}User successfully created :- Ubuntu${NC}\n"
-printf "${RED}Password successfully created :- 1234${NC}\n"
+printf "${RED}Password successfully created :- 123456${NC}\n"
 
 
 
@@ -12,7 +12,7 @@ printf "${GREEN}Installing RDP Be Patience....${NC}" >&2
 {
 sudo useradd -m Ubuntu
 sudo adduser Ubuntu sudo
-echo 'Ubuntu:1234' | sudo chpasswd
+echo 'Ubuntu:123456' | sudo chpasswd
 sed -i 's/\/bin\/sh/\/bin\/bash/g' /etc/passwd
 sudo apt-get update
 wget https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb
